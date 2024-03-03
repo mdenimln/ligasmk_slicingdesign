@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap');
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'DM Sans', sans-serif;
+}
+:root {
+    --colorLight: hsl(0, 0%, 100%);
+    --colorDark: hsl(228, 59%, 9%);
+    --colorPrimer: hsl(252, 87%, 48%);
+    --colorBlueSekunder: hsl(228, 100%, 97%);
+    --colorYellowSekunder: hsl(45, 95%, 61%);
+    --colorPinkSekunder: hsl(25, 100%, 95%);
+    
+
+    
+}
+
+header{
+    width: 100%;
+    background-color: var(--colorLight);
+}
+header > nav{
+    width: 90%;
+    height: 69px;
+    max-width: 1050px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header > nav .logo img{
+    width: 108px;
+}
+header > nav ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+header > nav ul a{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-weight: 600;
+}
+
+/* nilai default */
+.container{
+    width: 90%;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+.btn_blue{
+    width: 180px;
+    background-color: var(--colorPrimer);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    color: var(--colorLight);
+    border-radius: 5px;
+}
+.btn_blue span{
+    font-size: 0.8em;
+}
+.btn_blue img{
+    width: 14px;
+}
+
+
+.display_one{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--colorBlueSekunder);
+}
+.display_one > .display{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    grid-template-areas: 'text hero';
+    align-items: center;
+    gap: 70px;
+    padding-top: 50px;
+}
+.display_one .col_persuasif{
+    grid-area: text;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.display_one .col_persuasif h1{
+    font-size: 3.5em;
+    letter-spacing: 1.5px;
+    width: 85%;
+}
+.display_one .hero_img{
+    width: 90%;
+    grid-area: hero;
+}
+.hero_img img{
+    width: 100%;
+}
+
+.display_two{
+    width: 100%;
+    padding: 80px 0;
+    background-color: var(--colorYellowSekunder);
+}
+.display_two > .display{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+.display_two .col {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.display_two .col img{
+    width: 50px;
+}
+.display_two > .display .col:nth-child(2) img{
+    width: 40px;
+}
+
+.display_three{
+    width: 100%;
+    background-color: var(--colorLight);
+}
+.display_three > .display{
+   display: flex;
+   flex-direction: column;
+   gap: 50px; 
+   padding: 80px 0;
+}
+.display_three aside{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.display_three aside h2{
+    font-size: 1.8em;
+}
+.display_three aside ul{
+    display: flex;
+    gap: 10px;
+}
+.display_three aside ul li.active{
+    box-shadow: 0px 0px 66px 10px rgba(45, 3, 162, 0.2);
+}
+.display_three aside ul li{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 0.7em;
+    border-radius: 3px;
+}
+.display_three .container_class{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+.display_three .col_class{
+    position: relative;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.048);
+}
+.display_three .col_class .new{
+    position: absolute;
+    width: 50px;
+    left: 15px;
+    top: 15px;
+}
+.display_three .col_class img{
+    width: 100%;
+}
+.display_three .access_class{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.display_three .access_class h3{
+    font-size: 1em;
+    font-weight: 700;
+}
+.display_three .access_class img{
+    width: 10px;
+}
+.display_three .access_class > span{
+    color: var(--colorPrimer);
+    font-weight: 600;
+    font-size: 0.8em;
+}
+.display_three .inner{
+    display: flex;
+    gap: 15px;
+}
+.display_three .inner > div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.display_three .inner span{
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.display_for{
+    width: 100%;
+    padding: 50px 0;
+    background-color: var(--colorPinkSekunder);
+}
+.display_for h3{
+    font-size: 2em;
+}
+.display_for > .display{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+.display_for > .display > img{
+    width: 90%;
+}
+
+.display_five{
+    width: 100%;
+    padding: 70px;
+}
+.display_five h2{
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 50px;
+}
+.display_five .container_category{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+.display_five .view_all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    font-weight: 700;
+    gap: 10px;
+    font-size: 0.9em;
+}
+.display_five .container_category .col_category{
+    display: flex;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    border-radius: 5px;
+    gap: 15px;
+}
+.display_five .container_category .col_category span{
+    font-size: 0.9em;
+}
+.display_five .bubule{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border-radius: 100px;
+    background-color: var(--colorBlueSekunder);
+}
+.display_five .container_category .col_category img{
+    width: 30px;
+}
+
+.display_six{
+    width: 100%;
+}
+.display_six img{
+    max-width: 300px;
+}
+.display_six .display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: var(--colorBlueSekunder);
+    gap: 100px;
+    padding: 50px;
+}
+.display_six .col_description{
+    width: 35   0px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 30px;
+}
+.display_six .col_description h3{
+    font-size: 2em;
+}
+.display_six .col_description p {
+    font-size: 0.8em;
+}
